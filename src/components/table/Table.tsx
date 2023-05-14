@@ -10,7 +10,6 @@ import Paper from "@mui/material/Paper";
 import "./table.css";
 import TablePagination from "@mui/material/TablePagination";
 import Search from "../search/Search";
-import { Box } from "@mui/material";
 
 interface TableHeaderI {
   name: string;
@@ -89,7 +88,7 @@ export default function DataTable({
   };
 
   return (
-    <Box>
+    <>
       <Search onSearch={handelSearch} placeholder={searchPlaceholder} />
 
       <Paper sx={{ width: "100%", mb: 2 }}>
@@ -113,6 +112,6 @@ export default function DataTable({
           onRowsPerPageChange={handleChangePerPage}
         />
       </Paper>
-    </Box>
+    </>
   );
 }
