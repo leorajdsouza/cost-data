@@ -10,7 +10,7 @@ import Paper from "@mui/material/Paper";
 import "./table.css";
 import TablePagination from "@mui/material/TablePagination";
 import Search from "../search/Search";
-import { Box } from "@mui/system";
+import { Box } from "@mui/material";
 
 interface TableHeaderI {
   name: string;

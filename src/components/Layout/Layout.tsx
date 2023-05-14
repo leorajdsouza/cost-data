@@ -1,14 +1,7 @@
 import * as React from "react";
 import { Outlet } from "react-router-dom";
 import "./style.css";
-import {
-  Box,
-  Container,
-  CssBaseline,
-  Toolbar,
-  Typography,
-  Link,
-} from "@mui/material";
+import { Box, Container, Toolbar, Typography, Link } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 
 export default function Layout() {
