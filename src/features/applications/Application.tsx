@@ -4,15 +4,11 @@ import { fetchData } from "../../api/api";
 import Dropdown from "../../components/dropdown/Dropdown";
 import DataTable from "../../components/table/Table";
 import { DATA_HEADER } from "../../constants";
+import { ORDER } from "../../enums";
 import "./Application.css";
 import { sortData } from "./utils";
 
 const FIELD_NAME = "Applications";
-
-enum ORDER {
-  asc = "ASC",
-  desc = "DESC",
-}
 
 export default function Application() {
   const [applications, setApplication] = useState([]);
