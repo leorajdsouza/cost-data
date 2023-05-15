@@ -1,4 +1,4 @@
-import { ORDER } from "../../enums";
+import { ORDER } from "../enums";
  
 const formatDate  = (date: string)=>{ 
   const [day,month,year] = date?.split("/");

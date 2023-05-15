@@ -5,7 +5,7 @@ import Dropdown from "../../components/dropdown/Dropdown";
 import DataTable from "../../components/table/Table";
 import { DATA_HEADER } from "../../constants";
 import { ORDER } from "../../enums";
-import { sortData } from "../applications/utils";
+import { sortData } from "../../util/utils";
 
 const FIELD_NAME = "Resources";
 

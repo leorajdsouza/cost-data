@@ -5,8 +5,8 @@ import Dropdown from "../../components/dropdown/Dropdown";
 import DataTable from "../../components/table/Table";
 import { DATA_HEADER } from "../../constants";
 import { ORDER } from "../../enums";
-import "./Application.css";
-import { sortData } from "./utils";
+import { sortData } from "../../util/utils";
+import { sortWrapper } from "./styles";
 
 const FIELD_NAME = "Applications";
 
@@ -55,14 +55,7 @@ export default function Application() {
       <Box sx={{ mt: 2 }}>
         {applicationsDetail?.length > 0 && (
           <>
-            <Box
-              sx={{
-                mb: 1,
-                display: "flex",
-                justifyContent: "end",
-                alignItems: "center",
-              }}
-            >
+            <Box sx={sortWrapper}>
               <Typography>Sort by:</Typography>
               <Chip
                 sx={{ m: 1 }}

@@ -7,7 +7,6 @@ import {
   SelectChangeEvent,
 } from "@mui/material";
 import React from "react";
-import "./dropdown.css";
 
 interface DropdownI {
   data: string[];
